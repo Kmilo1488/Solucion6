@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Suma Numeros</title>
+    </head>
+    <body>
+      <h1>Mi cuenta es :
+        <% if @count %>
+          <%= @count %>
+        <% else %>
+          <%= 0 %>
+          <% session[:counts] = 0 %>
+        <% end %>
+      </h1>
+      <form action="/" method="post">
+        <br>
+      <input type="submit" name="enviar" value="Suma!!">
+    </body>
+  </html>
